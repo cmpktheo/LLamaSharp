@@ -83,11 +83,6 @@ jobs:
           # Make all directories at once
           mkdir --parents deps/{avx,avx2,avx512,osx-arm64,osx-x64,android-x86,android-x86_64,android-arm64-v8a,cu11.7.1,cu12.1.0,clblast}
 
-          cp artifacts/llama-bin-linux-noavx-x64/libllama.so  deps/libllama.so
-          cp artifacts/llama-bin-linux-avx-x64/libllama.so    deps/avx/libllama.so
-          cp artifacts/llama-bin-linux-avx2-x64/libllama.so   deps/avx2/libllama.so
-          cp artifacts/llama-bin-linux-avx512-x64/libllama.so deps/avx512/libllama.so
-
           cp artifacts/llama-bin-android-x86/libllama.so deps/android-x86/libllama.so
           cp artifacts/llava-bin-android-x86/libllava_shared.so deps/android-x86/libllava_shared.so
 
