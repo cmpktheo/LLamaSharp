@@ -70,7 +70,6 @@ jobs:
     name: "Gather Binaries"
     if: ${{ always() }}
     needs: [
-      "compile-linux",
       "compile-android"
     ]
     steps:      
